@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envío de Planes de Recuperación - CIFP Avilés</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/logo.jpg" alt="CIFP Avilés" onclick="descargarManual('usuario')" style="cursor:pointer" title="Descargar Manual de Usuario">
+            </div>
+            <div>
+                <h1 class="header-title">Planes de Recuperación</h1>
+                <div class="header-links">
+                    <a href="manual/manual_usuario.pdf" download onclick="descargarManual('usuario')">📄 Manual de Usuario</a>
+                    <a href="manual/manual_despliegue.pdf" download onclick="descargarManual('despliegue')">⚙️ Manual de Despliegue</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="formulario-container">
+            <h2 class="formulario-titulo">Formulario de Envío de Planes</h2>
+
+            <form id="formulario" method="POST" action="procesar.php" enctype="multipart/form-data">
+                <div class="form-group required">
+                    <label for="tutor">Nombre del Tutor/a</label>
+                    <input type="text" id="tutor" name="tutor" required maxlength="100" placeholder="Ingrese el nombre del tutor o tutora">
+                </div>
+
+                <div class="form-group required">
+                    <label for="email-tutor">Correo Electrónico del Tutor/a</label>
+                    <input type="email" id="email-tutor" name="email_tutor" required placeholder="tutor@educastur.org">
+                </div>
+
+                <div class="form-group required">
+                    <label for="password">Contraseña de Correo</label>
+                    <input type="password" id="password" name="password" required placeholder="Contraseña del correo Educastur">
+                </div>
+
+                <div class="form-group required">
+                    <label for="pdfs">Ficheros PDF</label>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="pdfs" name="pdfs[]" required multiple accept=".pdf">
+                        <span class="file-icon">📄</span>
+                        <span class="file-display" id="pdfs-display">Seleccione los PDFs (puede seleccionar varios)</span>
+                    </div>
+                </div>
+
+                <div class="form-group required">
+                    <label for="excel">Fichero Excel</label>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="excel" name="excel" required accept=".xlsx,.xls">
+                        <span class="file-icon">📊</span>
+                        <span class="file-display" id="excel-display">Seleccione el archivo Excel</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="smtp-toggle">
+                        <input type="checkbox" id="smtp-toggle" name="smtp_custom">
+                        Usar servidor SMTP alternativo
+                    </label>
+                </div>
+
+                <div class="smtp-option" id="smtp-option">
+                    <div class="form-group">
+                        <label for="smtp-host">Servidor SMTP</label>
+                        <input type="text" id="smtp-host" name="smtp_host" placeholder="smtp.gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="smtp-user">Usuario SMTP</label>
+                        <input type="text" id="smtp-user" name="smtp_user" placeholder="usuario@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="smtp-pass">Contraseña SMTP</label>
+                        <input type="password" id="smtp-pass" name="smtp_pass" placeholder="Contraseña">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-enviar" id="btn-enviar">ENVIAR PLANES</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2025· CIFP Avilés</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
