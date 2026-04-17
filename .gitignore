@@ -1,9 +1,10 @@
-vendor/
-logs/
-uploads/
-tests/
+# vendor/
+# logs/
+# uploads/
+# tests/
 *.pyc
 __pycache__/
 .DS_Store
 *.log
 uploads/
+logs/
