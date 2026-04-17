@@ -1,0 +1,39 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.0.3, pluggy-1.6.0
+cachedir: .pytest_cache
+rootdir: C:\Users\ignaf
+collecting ... collected 29 items
+
+TestEstructura::test_directorio_existe PASSED [  3%]
+TestEstructura::test_directorio_app_existe PASSED [  6%]
+TestEstructura::test_directorio_clases_existe PASSED [ 10%]
+TestEstructura::test_directorio_assets_existe PASSED [ 13%]
+TestEstructura::test_directorio_css_existe PASSED [ 17%]
+TestEstructura::test_directorio_js_existe PASSED [ 20%]
+TestEstructura::test_directorio_manual_existe PASSED [ 24%]
+TestEstructura::test_directorio_logs_existe PASSED [ 31%]
+TestEstructura::test_directorio_errores_existe PASSED [ 34%]
+TestEstructura::test_directorio_tests_existe PASSED [ 37%]
+TestFicheros::test_index_html_existe PASSED [ 41%]
+TestFicheros::test_procesar_php_existe PASSED [ 44%]
+TestFicheros::test_css_existe PASSED [ 48%]
+TestFicheros::test_js_existe PASSED [ 51%]
+TestFicheros::test_logo_existe PASSED [ 55%]
+TestFicheros::test_logger_php_existe PASSED [ 58%]
+TestFicheros::test_errorhandler_php_existe PASSED [ 62%]
+TestFicheros::test_excelreader_php_existe PASSED [ 65%]
+TestFicheros::test_emailsender_php_existe PASSED [ 69%]
+TestFicheros::test_manual_usuario_pdf_existe PASSED [ 72%]
+TestFicheros::test_manual_despliegue_pdf_existe PASSED [ 76%]
+TestContenido::test_index_tiene_formulario PASSED [ 79%]
+TestContenido::test_index_tiene_campos_tutor PASSED [ 82%]
+TestContenido::test_index_tiene_email PASSED [ 86%]
+TestContenido::test_index_tiene_directorio PASSED [ 89%]
+TestContenido::test_index_tiene_excel PASSED [ 93%]
+TestContenido::test_index_tiene_footer PASSED [ 96%]
+TestContenido::test_css_tiene_colores_cifp PASSED [100%]
+
+============================== 29 passed in 0.04s ==============================
+
+Fecha de ejecucion: 2026-04-17 22:00
+Resultado: PASSED

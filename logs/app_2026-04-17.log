@@ -1,0 +1,20 @@
+[2026-04-17 20:53:12] [INFO] Inicio | {"tutor":"Ignacio Javier Fernández Caamaño","excel":"datos_prueba.xlsx","pdfs":3}
+[2026-04-17 20:53:24] [INFO] Enviado | {"alumno":"Juan García López","email":"ignaciojfc@educastur.org"}
+[2026-04-17 20:53:26] [INFO] Enviado | {"alumno":"María Fernández smith","email":"ignaciojfc@educastur.org"}
+[2026-04-17 20:53:27] [INFO] Enviado | {"alumno":"Carlos Rodríguez Iglesias","email":"gonzaloyv@educastur.org"}
+[2026-04-17 20:53:27] [INFO] Fin | {"total":3,"exitos":3,"fallos":0}
+[2026-04-17 20:57:35] [INFO] Inicio | {"tutor":"Ignacio Javier Fernández Caamaño","excel":"datos_prueba.xlsx","pdfs":3}
+[2026-04-17 20:57:37] [INFO] Enviado | {"alumno":"Juan García López","email":"ignaferca@hotmail.com"}
+[2026-04-17 20:57:38] [INFO] Enviado | {"alumno":"María Fernández smith","email":"ignaciojfc@educastur.org"}
+[2026-04-17 20:57:40] [INFO] Enviado | {"alumno":"Carlos Rodríguez Iglesias","email":"ignaferca@gmail.com"}
+[2026-04-17 20:57:40] [INFO] Fin | {"total":3,"exitos":3,"fallos":0}
+[2026-04-17 21:07:31] [INFO] Inicio | {"tutor":"Ignacio Javier Fernández Caamaño","excel":"datos_prueba.xlsx","pdfs":3}
+[2026-04-17 21:07:32] [INFO] Enviado | {"alumno":"Juan García López","email":"ignaferca@hotmail.com"}
+[2026-04-17 21:07:33] [INFO] Enviado | {"alumno":"María Fernández smith","email":"ignaciojfc@educastur.org"}
+[2026-04-17 21:07:35] [INFO] Enviado | {"alumno":"Carlos Rodríguez Iglesias","email":"ignaferca@gmail.com"}
+[2026-04-17 21:07:35] [INFO] Fin | {"total":3,"exitos":3,"fallos":0}
+[2026-04-17 21:19:42] [INFO] Inicio | {"tutor":"Ignacio Javier Fernández Caamaño","excel":"datos_prueba.xlsx","pdfs":3}
+[2026-04-17 21:19:44] [INFO] Enviado | {"alumno":"Juan García López","email":"ignaferca@hotmail.com"}
+[2026-04-17 21:19:45] [INFO] Enviado | {"alumno":"María Fernández smith","email":"ignaciojfc@educastur.org"}
+[2026-04-17 21:19:47] [INFO] Enviado | {"alumno":"Carlos Rodríguez Iglesias","email":"ignaferca@gmail.com"}
+[2026-04-17 21:19:47] [INFO] Fin | {"total":3,"exitos":3,"fallos":0}
