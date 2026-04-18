@@ -114,12 +114,12 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .finally(() => {
                 btnEnviar.disabled = false;
-                btnEnviar.textContent = 'ENVIAR PLANES';
+                btnEnviar.textContent = 'ENVIAR DOCUMENTOS';
             });
         });
     }
 
-    const inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="password"]');
+    const inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="password"], textarea');
     inputs.forEach(input => {
         input.addEventListener('focus', function() {
             this.parentElement.classList.add('focused');

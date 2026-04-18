@@ -186,6 +186,7 @@ main {
 .form-group input[type="email"],
 .form-group input[type="file"],
 .form-group input[type="password"],
+.form-group textarea,
 .form-group .file-input-wrapper {
     width: 100%;
     padding: 0.875rem 1rem;
@@ -198,14 +199,22 @@ main {
     color: var(--negro);
 }
 
-.form-group input:focus {
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
     outline: none;
     border-color: var(--cifp-azul);
     box-shadow: 0 0 0 4px rgba(26, 58, 110, 0.15);
     transform: scale(1.01);
 }
 
-.form-group input:hover {
+.form-group input:hover,
+.form-group textarea:hover {
     border-color: var(--cifp-azul);
     background: #fafbfd;
 }
@@ -348,7 +357,8 @@ main {
     }
 }
 
-.smtp-toggle {
+.smtp-toggle,
+.checkbox-toggle {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -356,6 +366,24 @@ main {
     color: var(--cifp-azul);
     font-size: 0.9rem;
     transition: var(--transicion);
+}
+
+.smtp-toggle:hover,
+.checkbox-toggle:hover {
+    color: var(--cifp-naranja);
+}
+
+.smtp-toggle input,
+.checkbox-toggle input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--cifp-azul);
+    cursor: pointer;
+}
+
+.smtp-toggle input:checked,
+.checkbox-toggle input:checked {
+    accent-color: var(--cifp-naranja);
 }
 
 .smtp-toggle:hover {

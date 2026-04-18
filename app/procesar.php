@@ -30,8 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $tutor = trim($_POST['tutor'] ?? '');
 $emailTutor = trim($_POST['email_tutor'] ?? '');
+$cuerpo = trim($_POST['cuerpo'] ?? '');
+$enviarCopia = !empty($_POST['copia']);
 
-if (empty($tutor) || empty($emailTutor)) {
+if (empty($tutor) || empty($emailTutor) || empty($cuerpo)) {
     respuesta(false, 'Por favor, complete todos los campos obligatorios');
 }
 
@@ -118,7 +120,9 @@ try {
                 $tutor,
                 $correoAlumno,
                 $nombreAlumno,
-                $pdfPath
+                $pdfPath,
+                $cuerpo,
+                $enviarCopia
             );
 
             $logger->info('Enviado', ['alumno' => $nombreAlumno, 'email' => $correoAlumno]);

@@ -42,12 +42,38 @@ story = []
 
 story.append(Paragraph("Manual de Despliegue", title_style))
 story.append(Spacer(1, 0.3*inch))
-story.append(Paragraph("Sistema de Envio de Planes de Recuperacion - CIFP Aviles", normal_style))
+story.append(Paragraph("Sistema PDF Multisender - CIFP Aviles", normal_style))
 story.append(Spacer(1, 0.5*inch))
-story.append(Paragraph("1. Introduccion", heading_style))
+story.append(Paragraph("1. Tecnologias Utilizadas", heading_style))
+story.append(Paragraph("El sistema esta construido con las siguientes tecnologias:", normal_style))
+
+data_tech = [
+    ['Tecnologia', 'Tipo', 'Version', 'Descripcion'],
+    ['PHP', 'Lenguaje', '8.1+', 'Lado del servidor'],
+    ['HTML/CSS', 'Frontend', '-', 'Interfaz de usuario'],
+    ['PHPMailer', 'Libreria', '6.9+', 'Envio de correos SMTP'],
+    ['PHPSpreadsheet', 'Libreria', '1.29+', 'Lectura de archivos Excel'],
+    ['Apache', 'Servidor', '2.4', 'Servidor web'],
+    ['Composer', 'Gestor', '2.0+', 'Gestion de dependencias PHP'],
+    ['ReportLab', 'Libreria', '-', 'Generacion de PDFs (Python)']
+]
+t_tech = Table(data_tech, colWidths=[1.8*inch, 1*inch, 1*inch, 2.2*inch])
+t_tech.setStyle(TableStyle([
+    ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#e85a19")),
+    ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+    ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0, 0), (-1, 0), 9),
+    ('BOTTOMPADDING', (0, 0), (-1, 0), 10),
+    ('BACKGROUND', (0, 1), (-1, -1), colors.HexColor("#f5f5f5")),
+    ('GRID', (0, 0), (-1, -1), 1, colors.black)
+]))
+story.append(t_tech)
+story.append(Spacer(1, 0.3*inch))
+story.append(Paragraph("2. Introduccion", heading_style))
 story.append(Paragraph("Este manual describe los pasos necesarios para desplegar la aplicacion en un servidor Apache con PHP.", normal_style))
 story.append(Spacer(1, 0.3*inch))
-story.append(Paragraph("2. Requisitos del Servidor", heading_style))
+story.append(Paragraph("3. Requisitos del Servidor", heading_style))
 
 data = [
     ['Componente', 'Version Minima'],

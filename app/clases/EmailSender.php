@@ -32,7 +32,9 @@ class EmailSender {
         string $fromName,
         string $toEmail,
         string $alumno,
-        string $attachmentPath
+        string $attachmentPath,
+        string $body = '',
+        bool $enviarCopia = false
     ): bool {
         $mail = new PHPMailer(true);
 
@@ -50,10 +52,13 @@ class EmailSender {
 
             $mail->setFrom($fromEmail, $fromName);
             $mail->addAddress($toEmail);
-            $mail->addCC($fromEmail, $fromName);
+            
+            if ($enviarCopia) {
+                $mail->addCC($fromEmail, $fromName);
+            }
 
-            $mail->Subject = 'Plan de recuperación ' . $alumno;
-            $mail->Body = 'Se adjunta plan de recuperación';
+            $mail->Subject = $alumno;
+            $mail->Body = $body ?: 'Se adjunta documento';
             $mail->isHtml(false);
 
             if (!empty($attachmentPath) && file_exists($attachmentPath)) {

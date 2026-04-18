@@ -13,10 +13,11 @@
                 <img src="assets/logo.jpg" alt="CIFP Avilés" onclick="descargarManual('usuario')" style="cursor:pointer" title="Descargar Manual de Usuario">
             </div>
             <div>
-                <h1 class="header-title">Planes de Recuperación</h1>
+                <h1 class="header-title">PDF Multisender</h1>
                 <div class="header-links">
                     <a href="manual/manual_usuario.pdf" download onclick="descargarManual('usuario')">📄 Manual de Usuario</a>
                     <a href="manual/manual_despliegue.pdf" download onclick="descargarManual('despliegue')">⚙️ Manual de Despliegue</a>
+                    <a href="manual/manual_generico.pdf" download onclick="descargarManual('generico')">📑 Manual Genérico</a>
                 </div>
             </div>
         </div>
@@ -24,17 +25,29 @@
 
     <main>
         <div class="formulario-container">
-            <h2 class="formulario-titulo">Formulario de Envío de Planes</h2>
+            <h2 class="formulario-titulo">Formulario PDF Multisender. Planes, boletines y otros.</h2>
 
             <form id="formulario" method="POST" action="procesar.php" enctype="multipart/form-data">
                 <div class="form-group required">
-                    <label for="tutor">Nombre del Tutor/a</label>
-                    <input type="text" id="tutor" name="tutor" required maxlength="100" placeholder="Ingrese el nombre del tutor o tutora">
+                    <label for="tutor">Nombre del Remitente</label>
+                    <input type="text" id="tutor" name="tutor" required maxlength="100" placeholder="Ingrese su nombre">
                 </div>
 
                 <div class="form-group required">
-                    <label for="email-tutor">Correo Electrónico del Tutor/a</label>
-                    <input type="email" id="email-tutor" name="email_tutor" required placeholder="tutor@educastur.org">
+                    <label for="email-tutor">Correo Electrónico del Remitente</label>
+                    <input type="email" id="email-tutor" name="email_tutor" required placeholder="correo@educastur.org">
+                </div>
+
+                <div class="form-group required">
+                    <label for="cuerpo">Cuerpo del Correo</label>
+                    <textarea id="cuerpo" name="cuerpo" required rows="4" placeholder="Escriba el mensaje que recibirá el alumno..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-toggle">
+                        <input type="checkbox" id="copia" name="copia">
+                        Reenviar una copia al remitente
+                    </label>
                 </div>
 
                 <div class="form-group required">
@@ -82,7 +95,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn-enviar" id="btn-enviar">ENVIAR PLANES</button>
+                <button type="submit" class="btn-enviar" id="btn-enviar">ENVIAR DOCUMENTOS</button>
             </form>
         </div>
     </main>
