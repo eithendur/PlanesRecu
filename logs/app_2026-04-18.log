@@ -1,0 +1,20 @@
+[2026-04-18 19:14:28] [INFO] Inicio | {"tutor":"Ignacio Javier Fernández Caamaño","excel":"datos_prueba.xlsx","pdfs":3}
+[2026-04-18 19:14:32] [INFO] Enviado | {"alumno":"Juan García López","email":"ignaferca@hotmail.com"}
+[2026-04-18 19:14:34] [INFO] Enviado | {"alumno":"María Fernández smith","email":"ignaciojfc@educastur.org"}
+[2026-04-18 19:14:35] [INFO] Enviado | {"alumno":"Carlos Rodríguez Iglesias","email":"ignaferca@gmail.com"}
+[2026-04-18 19:14:35] [INFO] Fin | {"total":3,"exitos":3,"fallos":0}
+[2026-04-18 19:15:35] [INFO] Inicio | {"tutor":"Ignacio Javier Fernández Caamaño","excel":"datos_prueba.xlsx","pdfs":3}
+[2026-04-18 19:15:41] [ERROR] Error | {"alumno":"Juan García López","error":"Error al enviar correo: SMTP Error: Could not authenticate."}
+[2026-04-18 19:15:47] [ERROR] Error | {"alumno":"María Fernández smith","error":"Error al enviar correo: SMTP Error: Could not authenticate."}
+[2026-04-18 19:15:53] [ERROR] Error | {"alumno":"Carlos Rodríguez Iglesias","error":"Error al enviar correo: SMTP Error: Could not authenticate."}
+[2026-04-18 19:15:53] [INFO] Fin | {"total":3,"exitos":0,"fallos":3}
+[2026-04-18 19:16:39] [INFO] Inicio | {"tutor":"Ignacio Javier Fernández Caamaño","excel":"datos_prueba.xlsx","pdfs":3}
+[2026-04-18 19:16:40] [INFO] Enviado | {"alumno":"Juan García López","email":"ignaferca@hotmail.com"}
+[2026-04-18 19:16:42] [INFO] Enviado | {"alumno":"María Fernández smith","email":"ignaciojfc@educastur.org"}
+[2026-04-18 19:16:45] [INFO] Enviado | {"alumno":"Carlos Rodríguez Iglesias","email":"ignaferca@gmail.com"}
+[2026-04-18 19:16:45] [INFO] Fin | {"total":3,"exitos":3,"fallos":0}
+[2026-04-18 19:18:15] [INFO] Inicio | {"tutor":"Ignacio Javier Fernández Caamaño","excel":"datos_prueba.xlsx","pdfs":3}
+[2026-04-18 19:18:16] [INFO] Enviado | {"alumno":"Juan García López","email":"ignaferca@hotmail.com"}
+[2026-04-18 19:18:18] [INFO] Enviado | {"alumno":"María Fernández smith","email":"ignaciojfc@educastur.org"}
+[2026-04-18 19:18:19] [INFO] Enviado | {"alumno":"Carlos Rodríguez Iglesias","email":"ignaferca@gmail.com"}
+[2026-04-18 19:18:19] [INFO] Fin | {"total":3,"exitos":3,"fallos":0}

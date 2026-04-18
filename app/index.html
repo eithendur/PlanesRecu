@@ -39,20 +39,13 @@
                 </div>
 
                 <div class="form-group required">
-                    <label for="cuerpo">Cuerpo del Correo</label>
-                    <textarea id="cuerpo" name="cuerpo" required rows="4" placeholder="Escriba el mensaje que recibirá el alumno..."></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label class="checkbox-toggle">
-                        <input type="checkbox" id="copia" name="copia">
-                        Reenviar una copia al remitente
-                    </label>
+                    <label for="password">Contraseña de Correo</label>
+                    <input type="password" id="password" name="password" required placeholder="Contraseña del correo Educastur">
                 </div>
 
                 <div class="form-group required">
-                    <label for="password">Contraseña de Correo</label>
-                    <input type="password" id="password" name="password" required placeholder="Contraseña del correo Educastur">
+                    <label for="cuerpo">Cuerpo del Correo</label>
+                    <textarea id="cuerpo" name="cuerpo" required rows="4" placeholder="Escriba el mensaje que recibirá el alumno..."></textarea>
                 </div>
 
                 <div class="form-group required">
@@ -73,11 +66,19 @@
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label class="smtp-toggle">
-                        <input type="checkbox" id="smtp-toggle" name="smtp_custom">
-                        Usar servidor SMTP alternativo
-                    </label>
+                <div class="checkbox-row">
+                    <div class="form-group">
+                        <label class="checkbox-toggle">
+                            <input type="checkbox" id="copia" name="copia">
+                            Reenviar una copia al remitente
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="smtp-toggle">
+                            <input type="checkbox" id="smtp-toggle" name="smtp_custom">
+                            Usar servidor SMTP alternativo
+                        </label>
+                    </div>
                 </div>
 
                 <div class="smtp-option" id="smtp-option">

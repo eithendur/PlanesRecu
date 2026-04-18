@@ -1,0 +1,9 @@
+{
+    "tutor": "Ignacio Javier Fernández Caamaño",
+    "email_tutor": "Ignaferca@hotmail.com",
+    "alumno": "Carlos Rodríguez Iglesias",
+    "email_alumno": "ignaferca@gmail.com",
+    "plan": "plan_carlos_rodriguez.pdf",
+    "error": "Error al enviar correo: SMTP Error: Could not authenticate.",
+    "timestamp": "2026-04-18 19:15:53"
+}

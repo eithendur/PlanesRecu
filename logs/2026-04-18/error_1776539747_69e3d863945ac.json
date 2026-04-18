@@ -1,0 +1,9 @@
+{
+    "tutor": "Ignacio Javier Fernández Caamaño",
+    "email_tutor": "Ignaferca@hotmail.com",
+    "alumno": "María Fernández smith",
+    "email_alumno": "ignaciojfc@educastur.org",
+    "plan": "plan_maria_fernandez.pdf",
+    "error": "Error al enviar correo: SMTP Error: Could not authenticate.",
+    "timestamp": "2026-04-18 19:15:47"
+}

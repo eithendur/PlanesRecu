@@ -111,7 +111,7 @@ header::after {
     border-radius: 4px;
     font-size: 0.85rem;
     transition: var(--transicion);
-    background: rgba(255,255,255,0.1);
+    background: #4a4a4a;
 }
 
 .header-links a:hover {
@@ -384,6 +384,17 @@ main {
 .smtp-toggle input:checked,
 .checkbox-toggle input:checked {
     accent-color: var(--cifp-naranja);
+}
+
+.checkbox-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-row .form-group {
+    margin-bottom: 0;
 }
 
 .smtp-toggle:hover {
